@@ -1,4 +1,7 @@
 - hosts: server
+  environment:
+    http_proxy: "http://10.71.1.113:7080"
+    https_proxy: "http://10.71.1.113:7080"
   vars:
   -  image: rahadiancs/httpd-custom:icon
   tasks:
