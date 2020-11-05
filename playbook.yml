@@ -21,7 +21,7 @@
         name: "{{ image }}"
         state: present
     - name: create containers
-      docker_containers:
+      docker_container:
         name: docker-ansible
         state: started
         published_ports:
