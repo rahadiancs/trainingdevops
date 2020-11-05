@@ -17,7 +17,7 @@
       when:
       - ansible_distribution == "CentOS"
     - name: pull images
-      docker_images:
+      docker_image:
         name: "{{ image }}"
         state: present
     - name: create containers
